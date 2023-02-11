@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    .header {
+        width: 100%;
+        height: 80px;
+        background-color: skyblue;
+        text-align: center;
+        line-height: 80px;
+
+    }
+
+    .bottom {
+        display: flex;
+
+        .left {
+            width: 220px;
+            height: 100vh;
+            background-color: cadetblue;
+
+            ul {
+                margin-top: 30px;
+
+                li {
+                    text-align: center;
+                    list-style: none;
+                    margin-top: 10px;
+                    font-size: 20px;
+
+                    a {
+                        display: block;
+                        text-decoration: none;
+                    }
+
+                    &:hover {
+                        background-color: seashell;
+                        color: white;
+
+                    }
+                }
+            }
+        }
+
+        .right {
+            width: calc(100vw - 220px);
+            height: 100vh;
+            background-color: #ccc;
+        }
+    }
+
+}
+
+.active {
+    background-color: skyblue;
+    color: white;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div id="root">
+            <h1>Hello,{{name}}</h1>
+
+        </div>
+        <script src="../js/vue.js"></script>
+        <script type="text/javascript">
+            Vue.config.productionTip = false
+            // el的两种写法
+            // const vue = new Vue({
+            //     // el: '#root', // el第一种写法
+            //     data: {
+            //         name: 'Vue',
+            //     }
+            // })
+            // vue.$mount('#root'); //el第二种写法，比较灵活，可以设定容器与vue实例交互时间
+            // setTimeout(() => {
+            //     vue.$mount('#root');
+            // }, 1000);
+
+            // data的两种写法
+            new Vue({
+                el: '#root',
+                // 第一种data 就是一个对象
+                // data: {
+                //     name: 'Vue',
+                // }
+
+                // 第一种data是一个函数
+                data () {
+                    return {
+                        name: 'Vue',
+                    }
+                }
+            })
+        </script>
+    </body>
+
+</html>

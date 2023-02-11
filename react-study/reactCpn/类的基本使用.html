@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div>
+            <h1>类的基本使用</h1>
+        </div>
+        <script type="text/javascript">
+            class person {
+                constructor(name, age) {
+                    this.name = name
+                    this.age = age
+                };
+                speck () {
+                    console.log(`我的名字是${this.name},我的年龄是${this.age}`);
+                }
+            };
+            let p1 = new person('qwe', 12);
+            let p2 = new person('lz', 30);
+            console.log(p1);
+            console.log(p2);
+            p1.speck();
+            p2.speck();
+
+            //继承
+            class student extends person {
+                constructor(name, age, garde) {
+                    super(name, age)
+                    this.garde = garde
+                };
+                speck () {
+                    console.log(`我的名字是${this.name},我的年龄是${this.age},我在读${this.garde}`);
+                }
+
+            };
+            let s1 = new student('aaa', 15, '高一');
+            console.log(s1);
+            s1.speck();
+
+
+
+
+        </script>
+    </body>
+
+</html>

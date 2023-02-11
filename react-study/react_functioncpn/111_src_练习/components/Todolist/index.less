@@ -1,0 +1,45 @@
+.todolistBox {
+    width: 300px;
+    background-color: #ccf;
+    margin-left: 100px;
+
+    .headerBox {
+        text-align: center;
+    }
+
+    .showBox {
+        ul {
+            li {
+                cursor: pointer;
+
+
+                .finishBtn {
+                    display: none;
+                }
+
+                &:hover {
+                    .finishBtn {
+                        display: block;
+                        margin-right: 130px;
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+
+    .btnBox {
+        margin-left: 10px;
+
+        button {
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+// 选中样式
+.finishStyle {
+    color: red;
+    text-decoration: line-through;
+}

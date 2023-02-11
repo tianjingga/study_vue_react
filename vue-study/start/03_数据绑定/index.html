@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div id="root">
+            <!-- 普通写法 -->
+            <h3>单项数据绑定 <input type="text" v-bind:value="name"></h3>
+            <h3>双项数据绑定 <input type="text" v-model:value="name"></h3>
+
+            <!-- 简写 -->
+            <h3>单项数据绑定 <input type="text" :value="name"></h3>
+            <h3>双项数据绑定 <input type="text" v-model="name"></h3>
+        </div>
+        <script src="../js/vue.js"></script>
+        <script type="text/javascript">
+            Vue.config.productionTip = false
+
+            new Vue({
+                el: '#root',
+                data: {
+                    name: 'Vue',
+                }
+            })
+        </script>
+    </body>
+
+</html>

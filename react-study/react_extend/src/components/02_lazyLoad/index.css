@@ -1,0 +1,30 @@
+.bigBox .headerBox {
+  width: 100vw;
+  background-color: rgba(0, 0, 255, 0.688);
+  border: 1px solid rgba(0, 0, 255, 0.688);
+}
+
+.bigBox .bottomBox {
+  display: flex;
+}
+
+.bigBox .bottomBox .leftBox {
+  width: 220px;
+  height: 100vh;
+  background-color: rgba(210, 105, 30, 0.762);
+}
+
+.bigBox .bottomBox .leftBox ul li {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.bigBox .bottomBox .rightBox {
+  width: 100vw;
+  background-color: rgba(204, 204, 204, 0.671);
+}
+
+.active {
+  background-color: skyblue;
+  color: white;
+}
